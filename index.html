@@ -44,25 +44,9 @@
   </head>
   <body class="bg-black text-white theme-transition text-[0.8rem] md:text-[0.95rem] lg:text-[1rem]" id="pageBody">
 
-    <div class="scroll-progress" id="progressBar"></div>
-
-    <script>
-      window.onscroll = function() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("progressBar").style.width = scrolled + "%";
-      };
-
-      if (localStorage.getItem('theme') === 'dark') {
-        document.documentElement.classList.add('dark');
-      }
-    </script>
-
     <section class="max-w-4xl mx-auto px-4 py-4 animate-fadeIn">
       <div class="flex justify-between items-center">
-        <h2 class="text-2xl font-bold glow-text">Benjamin Moisan</h2>
-        <span class="bg-yellow-800 text-yellow-300 px-3 py-1 rounded-full text-xs">🚧 Currently building: Shock Hazard</span>
+        
       </div>
     </section>
 
